@@ -5,7 +5,6 @@ import Login from "./features/auth/Login";
 import Register from "./features/auth/Register";
 import Dashboard from "./features/Dashboard";
 import Missing from "./components/Missing";
-import Users from "./features/users/Users";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route element={<Layout />}>
           <Route element={<RequireAuth />}>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/users" element={<Users />} />
           </Route>
           <Route path="*" element={<Missing />} />
         </Route>
