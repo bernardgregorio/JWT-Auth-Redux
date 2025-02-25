@@ -16,8 +16,8 @@ function App() {
           <Route element={<RequireAuth />}>
             <Route path="/" element={<Dashboard />} />
           </Route>
-          <Route path="*" element={<Missing />} />
         </Route>
+        <Route path="*" element={<Missing />} />
       </Routes>
     </>
   );
